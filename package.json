@@ -1,0 +1,45 @@
+{
+  "name": "tinyroutes",
+  "version": "1.0.0",
+  "description": "an express routing config loader",
+  "main": "route-loader.js",
+  "scripts": {
+    "start": "npx ts-node index.ts ",
+    "build": "yarn tsc && yarn copy-files",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:write": "prettier --write '**/*.ts' && eslint --fix '**/*.ts'"
+  },
+  "author": "admazzola",
+  "license": "MIT ",
+  "engines": {
+    "node": "14"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^5.0.0",
+    "@typechain/ethers-v5": "^7.1.0",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0",
+    "@types/mkdirp": "^1.0.2",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.14.0",
+    "eslint-config-standard-kit": "0.15.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^6.0.1",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "github:prettier-solidity/prettier-plugin-solidity#aa41b1093421f6ff67a0e6b1442081e05dabe71c",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
